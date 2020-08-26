@@ -1,0 +1,53 @@
+Swap the first and last elements of an array:
+
+lastIndex = num.length - 1;
+ int tmp = num[lastIndex]
+ num[lastIndex] = num[0];
+ num[0] = tmp;
+
+Swap method:
+void swap(int [] num, int i, int j)
+{
+ int tmp = num[i];
+ num[i] = num[j];
+ num[j] = tmp;
+}
+
+Printing the Array:
+for(i = 0; i < count.length; i++)
+ System.out.println(count[i]);
+ 
+Reverse Printing:
+for(i = count.length - 1; i > 0; i--)
+ System.out.println(count[i]);
+
+Counting how many achieve something:
+count = 0;
+ for(i = 0; i < mark.length; i++)
+ if(mark[i] >= 55)
+ count++;
+ 
+ Searching for an element:
+ boolean found = false;
+ for(i = 0; i < mark.length; i++)
+  if(mark[i] == 70)
+ {
+    found = true;
+    break;
+ }
+ if(found)
+  print("student " + i + " got 70%");
+ else
+  print("no student got 70%");
+  
+Finding MAX:
+int max = 0;
+ for(i = 0; i < mark.length; i++)
+ if(mark[i] > max)
+ max = mark[i];
+ 
+Finding MIN:
+int min = price[0];
+ for(i = 1; i < price.length; i++)
+ if(price[i] < min)
+ min = price[i];
